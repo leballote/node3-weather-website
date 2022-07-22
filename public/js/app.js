@@ -13,8 +13,6 @@ weatherForm.addEventListener("submit", (ev) => {
   show(address);
 });
 
-// console.log("Cliente side js file is laoded!");
-
 async function show(address) {
   const res = await fetch(`./weather?address=${address}`);
   const json = await res.json();
